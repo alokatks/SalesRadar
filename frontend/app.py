@@ -51,7 +51,7 @@ h1,h2,h3 { color: white; }
 st.title("🚗 Car Sales Analytics Dashboard")
 st.markdown("### 📊 Real-time Analytics using Spring Boot + Streamlit")
 
-BASE_URL = "http://localhost:8080/api"
+BASE_URL = "https://salesradar-backend.onrender.com/api"
 
 
 # =========================================================
