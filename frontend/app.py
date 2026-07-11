@@ -48,8 +48,8 @@ h1,h2,h3 { color: white; }
 # TITLE
 # =========================================================
 
-st.title("🚗 Car Sales Analytics Dashboard")
-st.markdown("### 📊 Real-time Analytics using Spring Boot + Streamlit")
+st.title("🚗 SalesRadar — AI-Powered Automotive Sales Intelligence Platform")
+st.markdown("### 📊###  Real-time insights, ML forecasting & automated reporting for car dealerships")
 
 BASE_URL = "https://salesradar-backend.onrender.com/api"
 
@@ -607,4 +607,4 @@ elif option == "🤖 AI Insights":
 # =========================================================
 
 st.markdown("---")
-st.caption("🚀 Built with Streamlit + Spring Boot + Spring AI + scikit-learn + Plotly | By ALOK")
+st.caption("🚀 Full-Stack Analytics Platform | Spring Boot • MySQL • Streamlit • scikit-learn • Plotly | Built by Alok Tiwari")
