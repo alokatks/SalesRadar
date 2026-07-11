@@ -90,10 +90,9 @@ def ask_ai(question):
     except requests.exceptions.ConnectionError:
         return "❌ AI service unavailable."
 
-
 def upload_csv(file):
     try:
-   clear_response = requests.delete(f"{BASE_URL}/car-sales/clear", timeout=60)
+        clear_response = requests.delete(f"{BASE_URL}/car-sales/clear", timeout=60)
         if clear_response.status_code != 200:
             st.warning("⚠️ Could not clear previous data.")
         files = {"file": (file.name, file.getvalue(), "text/csv")}
