@@ -93,11 +93,11 @@ def ask_ai(question):
 
 def upload_csv(file):
     try:
-        clear_response = requests.delete(f"{BASE_URL}/car-sales/clear", timeout=10)
+   clear_response = requests.delete(f"{BASE_URL}/car-sales/clear", timeout=60)
         if clear_response.status_code != 200:
             st.warning("⚠️ Could not clear previous data.")
         files = {"file": (file.name, file.getvalue(), "text/csv")}
-        response = requests.post(f"{BASE_URL}/car-sales/upload-csv", files=files, timeout=30)
+        response = requests.post(f"{BASE_URL}/car-sales/upload-csv", files=files, timeout=120)
         return response
     except requests.exceptions.ConnectionError:
         return None
